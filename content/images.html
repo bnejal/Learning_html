@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Images on webpages</title>
+  </head>
+  <body>
+      <h1>Images on Webpages</h1>
+      <p>This lesson will focus on a comprehensive explanation of pictures on webpages and some formatting rules for organising photos on my websites.<br />
+      As a general rule of thumb pictures and particular pieces of content hosted on your site should ogarnized according to their utility, like textures/buttons being stored in a folder called "interface" or pictures pertaining to product images be stored alongside their detils or folder called "product_gallery".</p>
+
+<hr />
+
+      <h2>Adding Images</h2>
+      <p>When inserting a picture into web you'll have to describe the image's location through the "src" tag, an alternate text description if the image doesn't load through the "alt" tag and a "title tag" to provide a description of the photo when the user hovers their cursor over the picture.</p>
+      <img src="/pictures/squirrels.jpg" alt="a picture of a squirrel" title="a squirrel being compared to a covergirl.(werk it bish)" />
+<hr />
+      <h2>Height and width</h2>
+      <p> One of the useful things of describing the image to the browser firsthand is that the browser knows how much space to eave a picture while a page is still loading(as pictures take a longer time to load than textual descriptors a.k.a. text tags) height can be described through the "height" attribute and width can be described through the "width" attributes</p>
+
+  <hr />
+
+      <h2>Describing image placement</h2>
+      <p>A picture can be inserted before, in front of or within a body of text</p>
+
+      <img src="/pictures/birb.jpg" alt="birb"/>
+        <p>There ar around 10,000 living species of birds that inhabit ecosystems from the Arctic to the Antarctic. Many species undertakes long distance annual migrations, and many more perform shorter irregular journeys.</p><br />
+      <p><img src="/pictures/birb.jpg" alt="birb"/>There ar around 10,000 living species of birds that inhabit ecosystems from the Arctic to the Antarctic. Many species undertakes long distance annual migrations, and many more perform shorter irregular journeys.</p><br />
+      <p>There ar around 10,000 living species of birds that inhabit ecosystems from the Arctic to the Antarctic.<img src="/pictures/birb.jpg" alt="birb"/> Many species undertakes long distance annual migrations, and many more perform shorter irregular journeys.<p>
+      <hr />
+
+      <h2>html code alignment</h2>
+      <p> I'm gonna skip this on the principal that this is normally no longer used as it has been replaced by css</p>
+
+      <h2>Three rules for creating images</h2>
+      <p> there are three rules for creating images for your website which are summarized below</p>
+      <ol>
+        <li><dt><b>Save images in the right format</b></dt>
+          <dd>Webpages normally load jpeg, gid or png format. If you use the wrong format your webpage may load slowly, look not as sharp or not load at all. As all these formats have unique features that are application or use specific.</dd></li>
+        <li><dt><b>Save images at the right size</b></dt>
+          <dd>You should save the image at the same width and height it will appear on the website(measured in pixels). If the image is smaller than the width or height that you have specified , the image can be stretched and distorted. If the image is larger than the size you specified it may take longer for the image to be loaded.</dd></li>
+        <li><dt><b>Measure Images in Pixels</b></dt>
+          <dd>Computer screens are made up of tiny squares known as pixels. The number of pixels shown per inch of screen can vary if the user increases or decreases the resolution. Therefore when you are saving images at the right size you should always beasure them by pixel.</dd></li>
+      </ol>
+<hr />
+        <h2>Image Formats</h2>
+        <ol>
+          <li><dt>JPEG</dt>
+            <dd>JPEGs are extremely useful for images of many subtle shades of color or high detail. Like photos of fog or photos snow</dd><li>
+          <li><dt>GIF/Png</dt>
+            <dd>Gifs and pngs are good for photos composed of few colors and little color variation. Often filled with nothing but flat colors</dd></li>
+          <li><dt>Animated Gifs</dt>
+            <dd>Animations stored as gifs, often relatively simple/compact they served as boot screens for websites or played small clips</dd></li>
+          <li><dt>SVG (Scalable Vector Graphics)</dt>
+            <dd>Rescalable images incapable of losing fidelity due to the algorithmic generation of their objects</dd></li>
+          <li><dt>Transparency</dt>
+            <dd> Gifs for 100% transparency in an image. PNGs for drop shadows, rounded edges or semi-opaqness(basically use this format if you want variety with transparencies)</dd></li>
+          </ol>
+<hr />
+        <h2>Figure and Figure Caption</h2>
+        <p> Figure and figure captions were a recent addition to the html5 standard. That allowed the packaging of images alongside their captions/descriptions for css streamlining purposes<p>
+
+        <figure>
+          <img src="/pictures/lol.jpg" alt="why buy a whole pig when all you want is the sausage" />
+          <br />
+          <figcaption> This is one of my favorite quotes fromt the taiwanese president</figcaption>
+        </figure>
+        
+<!--Credits to the Author -->
+      <hr />
+      <h2>Credits</h2>
+      <address>
+        <p><b>Name:</b>brandon nejal</p>
+        <p><a href="mailto:bnejal@gmail.com">bnejal@gmail.com</a></p>
+        <p>1550 whispering wind dr</p>
+      </address>
+      <p><a href="/index.html">home</a></p>
+  </body>
+</html>

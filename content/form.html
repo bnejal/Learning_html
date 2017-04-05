@@ -6,12 +6,85 @@
   </head>
   <body>
     <h1>Html Forms</h1>
-    <p>Forms are used by html pages to receive information produced by the user and to relay the information back to the server. With the information being prependded by the the form control. At the the server the information is handled by the backend infrastructure and a new webpage is sent bank to confirm that the information was received.</p>
+    <p>Forms are used by html pages to receive information produced by the user and to relay the information back to the server. With the information being prependded by the form tag. At the the server the information is handled by the backend infrastructure and a new webpage is sent back to confirm that the information was received.</p>
 
     <h2>Example Form</h2>
+    <p>
+    Forms are flagged at the beginning and end by the "form" tag, at which point the form section uses the "input" tag with input parameters following the word word within the tag. Standard with all inputs is type and name. Type desrcibes the interface being made (button, box, etc) and name references where the input will headed to on the server.
+    <br />
+    The following is an example form
+  </p>
+    <br />
     <form action="/form.html">
         <p>User Input <input type="text" name="username" size="15" maxlength="30" /> </p>
+        <p>Password:
+          <input type="password" name="password" size="15" maxlength="30" />
+        </p>
       </form>
+
+    <h2>Textbox</h2>
+    <p>The parameters for the Textboxes are type-text, size-(character length of the box), maxlength - (Limits on how many characters can inputed).</p>
+    <form action = "placeholder">
+      <p>Type anything <input type="Text" name="r_input" length="30" maxlength="45" /></p>
+
+    <h2>Radio Button</h2>
+    <form action="">
+      <p>Sex:
+      <br />
+      <input type="radio" name="sex" value="male"/> Male
+      <br />
+      <input type="radio" name="sex" value="Female"/>
+      Female
+    </p>
+  </form>
+  <h2>Check Box </h2>
+  <form action="">
+      <p>Please select four favorite music service(s):
+        <br />
+        <input type="checkbox" name="servicee" value="itunes" checked= "checked" /> iTunes
+        <br />
+        <input type="checkbox" name="service" value="Last.fm" /> Last.fm
+        <br />
+        <input type="checkbox" name="service" value="Spotify" /> Spotify
+      </p>
+    <h2>Drop Down List</h2>
+    <p>Drop down list</p>
+    <form action="">
+      <p>What device do listen to music on?</p>
+      <select name="devices">
+        <option value="ipod">iPod</option>
+        <option value="radio">Radion</option>
+        <option value="computer">Computer</option>
+      </select>
+    </form>
+
+  <h2>Multiple Select Box</h2>
+<form action="">
+  <p>Do you play any of the following instruments?(You can select more than one option by holding down control on a PC or command key on a Mac while selecting different options.)</p>
+  <select name="instruments" size="3" multiple="multiple">
+    <option value="guitar" selected="selected">Guitar</option>
+    <option value="drums">Drums</option>
+    <option value="keyboard" selected="selected">Keyboard</option>
+    <option value="Bass">Bass</option>
+  </select>
+</form>
+
+<h2>File Input Box</h2>
+<form action="">
+  <p>Upload your song in MP3 format:</p>
+  <input type="file" name="User-Song" /><br />
+  <input type="submit" value="Upload" />
+</form>
+
+<h2>Submit Button</h2>
+<form action="">
+  <p>Subscribe to out email list:</p>
+  <input type="test" name="email" />
+  <input type="submit" name="subscribe" value="Subscribe" />
+</form>
+
+
+
 
 
       <!--Credits to the Author -->
